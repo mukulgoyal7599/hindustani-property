@@ -2,60 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hindustani Property</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
     }
-    header {
+    header, footer {
       background-color: #2c3e50;
       color: white;
+      text-align: center;
       padding: 20px 10px;
     }
-    h1 {
-      margin: 0;
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #34495e;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #1abc9c;
     }
     section {
       padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .cta {
-      display: inline-block;
+    .btn {
       background: #27ae60;
       color: white;
-      padding: 12px 20px;
-      margin-top: 20px;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
+      display: inline-block;
     }
-    footer {
-      background-color: #2c3e50;
-      color: #ccc;
-      padding: 10px 0;
-      font-size: 14px;
+    .social a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Welcome to Hindustani Property</h1>
-    <p>Your Trusted Real Estate Partner</p>
+    <h1>Hindustani Property</h1>
+    <p>India's First Real Estate + Bank Auction Portal</p>
   </header>
 
-  <section>
-    <h2>Website Coming Soon!</h2>
-    <p>We're building something awesome. Stay tuned.</p>
-    <a href="mailto:goyalmukul53@gmail.com" class="cta">Contact Us</a>
+  <nav>
+    <a href="#buy">Buy</a>
+    <a href="#sell">Sell</a>
+    <a href="#rent">Rent</a>
+    <a href="#auction">Auction</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="buy">
+    <h2>Buy Property</h2>
+    <div class="card">
+      <p>Find flats, plots, houses available for sale. Listings will be updated here soon.</p>
+      <a class="btn" href="#contact">Contact us to list your property</a>
+    </div>
+  </section>
+
+  <section id="sell">
+    <h2>Sell Property</h2>
+    <div class="card">
+      <p>Want to sell your property? We will help you reach potential buyers.</p>
+      <a class="btn" href="#contact">Submit Your Property</a>
+    </div>
+  </section>
+
+  <section id="rent">
+    <h2>Rent Property</h2>
+    <div class="card">
+      <p>List your property for rent or find rental listings here.</p>
+    </div>
+  </section>
+
+  <section id="auction">
+    <h2>Bank Auction Properties</h2>
+    <div class="card">
+      <p>Explore verified bank auction properties from SBI, PNB, Axis Bank, and more.</p>
+      <a class="btn" href="#">View Listings</a>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Property Research & Guides</h2>
+    <div class="card">
+      <p>Coming soon: Price trends, area comparisons, bank loan guides and more!</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p>📧 Email: <a href="mailto:hindustaniproperty@gmail.com">hindustaniproperty@gmail.com</a></p>
+      <p>📷 Instagram: <a href="https://instagram.com/hindustaniproperty" target="_blank">@hindustaniproperty</a></p>
+      <p>📘 Facebook: <a href="https://facebook.com/hindustaniproperty" target="_blank">fb.com/hindustaniproperty</a></p>
+      <p>▶️ YouTube: <a href="https://youtube.com/@hindustaniproperty" target="_blank">@hindustaniproperty</a></p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 HindustaniProperty.com | All rights reserved.
+    <p>&copy; 2025 HindustaniProperty.com | All rights reserved.</p>
+    <div class="social">
+      <a href="https://instagram.com/hindustaniproperty" target="_blank">Instagram</a>
+      <a href="https://facebook.com/hindustaniproperty" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@hindustaniproperty" target="_blank">YouTube</a>
+    </div>
   </footer>
-
 </body>
 </html>
